@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <!-- Hacemos un form para que al seleccionar los botones se pueda tomar los valores -->
+    <form action="" method="post" id="miFormulario">
+    <div class="fondo">
+        <h3>Calculadora</h3>
+       <div class="container">
+       
+        <div class="input">
+        <input type="number" id="num1" placeholder="ingrese un numero">         
+        </div>
+
+        <div class="input">
+        <input type="number" id="num2" placeholder="Ingrese otro numero"> 
+        </div>
+
+        <div id="botones"> 
+            <!-- Exclusivamente de type button para que no redirija a otra pagina -->
+
+            <button name="sumita" type="button" onclick="suma()">+</button>
+            <button type="button" onclick="elevacion()">^</button>
+            <button type="button" onclick="multiplicacion()">*</button>
+            <button type="button" onclick="division()">/</button>
+            <button type="button" onclick="resta()">-</button>
+         </div>           
+         <div id="resulado-box">
+         <p id="result"></p>
+         </div>
+         </div>
+    </div>          
+    </div>
+</form>
+    <script src="script.js"></script>
+</body>
+</html>
